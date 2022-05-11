@@ -1,7 +1,12 @@
 package com.example.OnlineQuizSystem;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
+import java.io.Serializable;
+import java.util.List;
 
-public interface StudentRepository extends MongoRepository<Student,Integer>{
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface StudentRepository extends MongoRepository<Student, Integer>{
 
 }
